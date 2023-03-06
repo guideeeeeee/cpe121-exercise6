@@ -1,0 +1,8 @@
+class average{
+  public static int average(int[]array){
+    
+  }
+  public static double average(double[]array){
+    
+  }
+}

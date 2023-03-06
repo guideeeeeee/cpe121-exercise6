@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class ex6_5{
+  public static void main(String[]args){
+    Scanner sn = new Scanner(System.in);
+    int x;
+    double[] num = new double[5];
+    double[] sort = new double[5];
+    for(int i = 0;i<num.length;i++){
+      System.out.print("Read a number :");
+      num[i] = sn.nextDouble();
+    }
+    for(int i = 0;i<num.length;i++){
+      x = (int)((Math.random()*5));
+      sort[i] = num[x];
+      while(i!=0){
+        if(sort[i]==sort[i-1]){
+        x = (int)((Math.random()*5));
+        sort[i] = num[x];
+        }
+        else
+          break;
+      }
+      System.out.println(sort[i]);
+    }
+    
+  }
+}

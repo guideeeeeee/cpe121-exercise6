@@ -1,0 +1,12 @@
+import java.util.Arrays;
+class min{
+public static int indexOfSmallestElement(double[] array){
+  Arrays.sort(array);
+  System.out.println();
+  for(int i = 0;i<array.length;i++){
+      System.out.print(array[i]+" ");
+    }
+  System.out.print ("\nFirst = "+array[0]+"\n");
+  return (int)array[0];
+}
+}
